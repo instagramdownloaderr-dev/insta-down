@@ -13,9 +13,10 @@
 
 # SPA fallback (only needed if React/Vue/SPA)
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/api/*" 
+ to = "https://insta-down-web-page.onrender.com/api/:splat" 
+ status = 200 
+ force = true
 
 # Cache static assets
 [[headers]]
